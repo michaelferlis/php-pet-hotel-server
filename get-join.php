@@ -1,4 +1,5 @@
-<!-- <?php
+
+<?php
  $dbconn = pg_connect("host=localhost dbname=pet_hotel")
     or die('Could not connect: ' . pg_last_error());
 // Performing SQL query
@@ -15,4 +16,5 @@ while ($line = pg_fetch_array($result, null, PGSQL_ASSOC)) {
     echo "\t</tr>\n";
 }
 echo "</table>\n";
-?> -->
+
+?>

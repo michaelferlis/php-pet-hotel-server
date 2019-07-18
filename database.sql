@@ -1,4 +1,4 @@
-CREATE TABLE "owners" (
+    CREATE TABLE "owners" (
     "owner_id" SERIAL PRIMARY KEY,
     "owner_name" VARCHAR (80) UNIQUE NOT NULL,
     "number_of_pets" INT NOT NULL
