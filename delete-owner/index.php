@@ -3,7 +3,7 @@
     or die('Could not connect: ' . pg_last_error());
     $petArray = array(
         "pet_id" => 1
-    )
+    );
     $ownerArray = array(
         "owner_id" => 1
     );
@@ -14,7 +14,7 @@ if ($res) {
 } else {
     echo "User must have sent wrong inputs\n";
 }
-$res = pg_delete($dbconn, "owner", $ownerArray);
+$res = pg_delete($dbconn, "owners", $ownerArray);
 if ($res) {
     echo "POST data is deleted: $res\n";
 } else {
